@@ -1,14 +1,14 @@
 import os
 class config:
     BOT_TOKEN = os.environ.get("BOT_TOKEN",None)
-    APP_ID = os.environ.get(APP_ID,None)
-    API_HASH = os.environ.get(API_HASH,None)
-    DATABASE_URL = os.environ.get(DATABASE_URL,None)
-    SUDO_USERS = os.environ.get(SUDO_USERS,None)
-    SUPPORT_CHAT_LINK = os.environ.get(SUPPORT_CHAT_LINK,None)
+    APP_ID = os.environ.get("APP_ID",None)
+    API_HASH = os.environ.get("API_HASH",None)
+    DATABASE_URL = os.environ.get("DATABASE_URL",None)
+    SUDO_USERS = os.environ.get("SUDO_USERS",None)
+    SUPPORT_CHAT_LINK = os.environ.get("SUPPORT_CHAT_LINK",None)
     DOWNLOAD_DIRECTORY = "./downloads/"
-    G_DRIVE_CLIENT_ID = os.environ.get(G_DRIVE_CLIENT_ID,None)
-    G_DRIVE_CLIENT_SECRET = os.environ.get(G_DRIVE_CLIENT_SECRET,None)
+    G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID",None)
+    G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET",None)
 
 
 class BotCommands:
