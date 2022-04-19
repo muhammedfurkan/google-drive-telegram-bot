@@ -4,7 +4,7 @@ class config:
     APP_ID = os.environ.get("APP_ID",None)
     API_HASH = os.environ.get("API_HASH",None)
     DATABASE_URL = os.environ.get("DATABASE_URL",None)
-    SUDO_USERS = [int(x) for x in os.environ.get("SUDO_USERS", "").split()]
+    SUDO_USERS = {int(x) for x in os.environ.get(SUDO_USERS, "").split()}
     SUPPORT_CHAT_LINK = os.environ.get("SUPPORT_CHAT_LINK",None)
     DOWNLOAD_DIRECTORY = "./downloads/"
     G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID",None)
